@@ -1,5 +1,5 @@
-# ui-driver-skel
-Skeleton Rancher UI driver for custom docker-machine drivers
+# ui-driver-nutanix
+Nutanix Rancher UI driver for nutanix docker-machine drivers
 
 ## Setup
 
