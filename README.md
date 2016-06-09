@@ -1,22 +1,6 @@
 # ui-driver-nutanix
 Nutanix Rancher UI driver for nutanix docker-machine drivers
 
-## Setup
-
-* Fork this repository into your own account as `ui-driver-DRIVERNAME`
-  * DRIVERNAME should be the name of the driver that you would give to `docker-machine create --driver`, e.g. "mycompany", "digitalocean", "vultr", etc.
-* Update the "name" in package.json to match
-  * You should also update description, URLs, etc, but these aren't strictly required.
-* `npm install`
-* `bower install`
-
-## Development
-
-This package contains a small web-server that will serve up the custom driver UI at `https://localhost:3000/component.js`.  You can run this while developing and point the Rancher settings there.
-* `npm start`
-* The driver name can be optionally overridden: `npm start -- --name=DRIVERNAME`
-* The compiled files are viewable at http://localhost:3000.
-* **Note:** The development server does not currently automatically restart when files are changed.
 
 ## Building
 

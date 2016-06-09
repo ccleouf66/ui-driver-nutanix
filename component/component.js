@@ -9,13 +9,13 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
     // Write your component here, starting with setting 'model' to a machine with your config populated
     bootstrap: function() {
       let config = this.get('store').createRecord({
-        type                  : '%%DRIVERNAME%%Config',
-        username              : "admin",
-        vcpu                  : 1,
-        vcore                 : 1,
-        vmem                  : 1024,
-        'nutanix-vm-image'    : "docker-img",
-        'nutanix-vm-network'  : "default",
+        type            : '%%DRIVERNAME%%Config',
+        username        : "admin",
+        vmCpus          : 1,
+        vmCores         : 1,
+        vmMem           : 1024,
+        vmImage         : "docker-img",
+        vmNetwork       : "default",
 
 
       });
@@ -35,7 +35,7 @@ define('ui/components/machine/driver-%%DRIVERNAME%%/component', ['exports', 'emb
       // Add more specific errors
 
       // Check something and add an error entry if it fails:
-      if ( parseInt(this.get('model.%%DRIVERNAME%%Config.vmem'),10) < 1024 )
+      if ( parseInt(this.get('model.%%DRIVERNAME%%Config.vmMem'),10) < 1024 )
       {
         errors.push('VM Memory must be at least 1024 MB');
       }

@@ -12,16 +12,15 @@
         <label class="form-control-static">Management Endpoint</label>
       </div>
       <div class="col-sm-12 col-md-4">
-        <div class="input-group">
+        
           {{input type="text"
             class="form-control"
             value=model.%%DRIVERNAME%%Config.endpoint
           }}
-          <span class="input-group-addon">IP</span>
-        </div>
+       
       </div>
       <div class="col-sm-12 col-md-4">
-      <p class="form-control-static help-block">Nutanix management endpoint ip address/FQDN</p>
+      <p class="form-control-static help-block">Nutanix management endpoint ip address/FQDN:9440</p>
   </div>
     </div>
 
@@ -30,12 +29,10 @@
         <label class="form-control-static">Username</label>
       </div>
       <div class="col-md-4">
-        <div class="input-group">
           {{input type="text"
             class="form-control"
             value=model.%%DRIVERNAME%%Config.username
           }}
-        </div>
       </div>
      <div class="col-sm-12 col-md-4">
   		<p class="form-control-static help-block">Nutanix management username</p>
@@ -47,12 +44,10 @@
         <label class="form-control-static">Password</label>
       </div>
       <div class="col-sm-12 col-md-4">
-        <div class="input-group">
           {{input type="text"
             class="form-control"
             value=model.%%DRIVERNAME%%Config.password
           }}
-      </div>
       </div>
       <div class="col-sm-12 col-md-4">
           <p class="form-control-static help-block">Nutanix management password</p>
@@ -64,12 +59,10 @@
         <label class="form-control-static">vCPU</label>
       </div>
       <div class="col-md-4">
-        <div class="input-group">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.vcpu
+            value=model.%%DRIVERNAME%%Config.vmCpus
           }}
-        </div>
       </div>
      <div class="col-sm-12 col-md-4">
       <p class="form-control-static help-block">Number of VCPUs of the VM to be created</p>
@@ -81,12 +74,10 @@
         <label class="form-control-static">vCORE</label>
       </div>
       <div class="col-md-4">
-        <div class="input-group">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.vcore
+            value=model.%%DRIVERNAME%%Config.vmCores
           }}
-        </div>
       </div>
      <div class="col-sm-12 col-md-4">
       <p class="form-control-static help-block">Number of cores per VCPU of the VM to be created</p>
@@ -101,13 +92,13 @@
         <div class="input-group">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.vmem
+            value=model.%%DRIVERNAME%%Config.vmMem
           }}
           <span class="input-group-addon">MB</span>
         </div>
       </div>
      <div class="col-sm-12 col-md-4">
-      <p class="form-control-static help-block">Memory of the VM to be created</p>
+      <p class="form-control-static help-block">Memory of the VM to be created (MB)</p>
   </div>
     </div>
 
@@ -116,12 +107,10 @@
         <label class="form-control-static">VM Image</label>
       </div>
       <div class="col-md-4">
-        <div class="input-group">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.nutanix-vm-image
+            value=model.%%DRIVERNAME%%Config.vmImage
           }}
-        </div>
       </div>
      <div class="col-sm-12 col-md-4">
       <p class="form-control-static help-block">The name of the VM disks to clone from, for the newly created VM</p>
@@ -133,12 +122,10 @@
         <label class="form-control-static">VM Network</label>
       </div>
       <div class="col-md-4">
-        <div class="input-group">
           {{input type="text"
             class="form-control"
-            value=model.%%DRIVERNAME%%Config.nutanix-vm-network
+            value=model.%%DRIVERNAME%%Config.vmNetwork
           }}
-        </div>
       </div>
      <div class="col-sm-12 col-md-4">
       <p class="form-control-static help-block">The name of the network to attach to the newly created VM</p>
