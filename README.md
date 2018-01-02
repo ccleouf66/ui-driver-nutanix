@@ -1,5 +1,5 @@
 # ui-driver-nutanix
-Rancher UI driver for Mutanix docker-machine driver
+Rancher UI driver for Nutanix docker-machine driver
 
 
 ## Using
