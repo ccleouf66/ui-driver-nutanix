@@ -15,22 +15,25 @@
   "scripts": {
     "start": "./node_modules/.bin/gulp server",
     "clean": "./node_modules/.bin/gulp clean",
-    "build": "./node_modules/.bin/gulp build",
-    "upload": "./scripts/upload"
+    "build": "./node_modules/.bin/gulp build"
   },
   "homepage": "https://github.com/tuxtof/ui-driver-nutanix#readme",
   "devDependencies": {
-    "del": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^3.2.2",
-    "gulp-htmlbars-compiler": "0.0.2",
-    "gulp-jshint": "^2.0.0",
-    "gulp-replace": "^0.5.4",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-wrap-amd": "^0.5.0",
-    "jshint": "^2.9.1",
-    "yargs": "^4.6.0"
+    "@babel/core": "^7.2.2",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.1",
+    "@babel/preset-env": "^7.2.3",
+    "del": "3.0.0",
+    "gulp": "4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "0.4.0",
+    "gulp-concat": "2.6.1",
+    "gulp-connect": "5.7.0",
+    "gulp-jshint": "2.1.0",
+    "gulp-replace": "1.0.0",
+    "gulp-sourcemaps": "2.6.4",
+    "jshint": "2.9.7",
+    "replace-string": "^2.0.0",
+    "yargs": "12.0.5"
   }
 }
